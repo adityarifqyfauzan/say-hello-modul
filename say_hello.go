@@ -1,12 +1,14 @@
 package say_hello_modul
 
+import "fmt"
+
 func SayHello() string {
 	return "Hello World!"
 }
 
-func sayHelloName(name string) string {
+func SayHelloName(name string) string {
 	if name != "" {
-		return "Hello " + name
+		return fmt.Sprintf("Hello, %s", name)
 	}
 	return "Hello, World"
 }
